@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SafeAuthenticater"
+             x:Class="SafeAuthenticater.Page3"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False" >
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                 <Label FontSize="Large" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center"
+                    Text="View app permissions" />
+
+                 <Image x:Name="myImage2" />
+
+                <Button VerticalOptions="End" HeightRequest="50" Margin="35,0,35,30" IsEnabled="True" Text="Skip for now" FontAttributes="None" TextColor="Black" BackgroundColor="White" FontSize="Medium" 
+                        Clicked="OnSkip" />
+
+                <Button VerticalOptions="End" Margin="35,0,35,30" IsEnabled="True" Text="continue" BackgroundColor="#0074E4" TextColor="White" FontAttributes="None" FontSize="Medium" 
+                        Clicked="OnContinue"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

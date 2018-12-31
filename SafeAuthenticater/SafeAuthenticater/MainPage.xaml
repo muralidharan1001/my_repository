@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SafeAuthenticater"
+             x:Class="SafeAuthenticater.MainPage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False" >
+
+    <StackLayout Margin="0,100,0,0" Spacing="0">
+
+
+        <Image x:Name="myImage" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
+        <Label FontSize="16" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" Text="What is the SAFE Authenticator?" />
+
+        <Label TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="30,0,30,0" FontFamily="Roboto" FontSize="12" >
+            <Label.Text LineBreakMode="CharacterWrap">
+                The Authenticator enables users to securely authenticate themselves onto the SAFE Network and protects network login credentials from apps.
+            </Label.Text>
+        </Label>
+
+        <StackLayout VerticalOptions="End" Spacing="5" >
+
+            <Label  Text="LOGIN" TextColor="#0074E4" FontSize="12" HorizontalOptions="Center" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLogin" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Button VerticalOptions="End" Margin="35,0,35,30" IsEnabled="True" Text="Get Started" BackgroundColor="#0074E4" TextColor="White" FontSize="12" Clicked="OnGetStarted" />
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

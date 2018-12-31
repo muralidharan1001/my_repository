@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SafeAuthenticater"
+             x:Class="SafeAuthenticater.Page5"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False" >
+    
+    <ContentPage.Content>
+        <ScrollView>
+           <StackLayout Padding="16"> 
+                
+                    <Label FontAttributes="Bold" TextColor="Black" FontSize="14" HorizontalTextAlignment="Center" Text="Manage authorisation requests" />
+                    <Label 
+                        TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="30,0,30,0" FontFamily="Roboto"  HorizontalTextAlignment="Center" FontSize="12">
+                        <Label.Text LineBreakMode="CharacterWrap">
+                            Review and grant permissions to apps.
+                        </Label.Text>
+                    </Label>
+
+                    <Image x:Name="grantpermissionsimg" />
+                
+            
+                <StackLayout VerticalOptions="End" Spacing="5"  >
+                
+                    <Label  Text="SKIP" TextColor="#0074E4" FontSize="12" HorizontalOptions="Center" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSkip" />
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                    <Button VerticalOptions="End" Margin="35,0,35,30" IsEnabled="True" Text="Continue" BackgroundColor="#0074E4" TextColor="White" FontSize="12" Clicked="OnContinue" />
+
+                </StackLayout>
+           </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
